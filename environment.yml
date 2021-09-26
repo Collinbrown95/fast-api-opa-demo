@@ -1,0 +1,36 @@
+name: fast-api-demo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - asgiref=3.4.1
+  - ca-certificates=2021.5.30
+  - click=8.0.1
+  - fastapi=0.68.1
+  - flake8=3.9.2
+  - h11=0.12.0
+  - importlib-metadata=4.8.1
+  - libcxx=12.0.1
+  - libffi=3.4.2
+  - mccabe=0.6.1
+  - ncurses=6.2
+  - openssl=1.1.1l
+  - pip=21.2.4
+  - pycodestyle=2.7.0
+  - pydantic=1.8.2
+  - pyflakes=2.3.1
+  - python=3.9.7
+  - python_abi=3.9
+  - readline=8.1
+  - setuptools=58.0.4
+  - sqlite=3.36.0
+  - starlette=0.14.2
+  - tk=8.6.11
+  - typing-extensions=3.10.0.2
+  - typing_extensions=3.10.0.2
+  - tzdata=2021a
+  - uvicorn=0.15.0
+  - wheel=0.37.0
+  - xz=5.2.5
+  - zipp=3.5.0
+  - zlib=1.2.11
