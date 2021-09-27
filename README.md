@@ -22,6 +22,10 @@ opa test . -v
 - [opa interactive debugger](https://play.openpolicyagent.org/)
 - [opa standalone envoy k8s](https://www.openpolicyagent.org/docs/latest/envoy-tutorial-standalone-envoy/)
 - [opa external data](https://www.openpolicyagent.org/docs/latest/external-data/)
+- [Medium post with example of envoy/opa pattern](https://medium.com/swlh/securing-dockerized-microservices-with-open-policy-agent-and-envoy-c128dfc764fe)
+- [related example of envoy/opa pattern](https://github.com/shanesoh/envoy-opa-compose)
+- [opa envoy plugin](https://github.com/open-policy-agent/opa-envoy-plugin#configuration)
+- [opa REST API reference (useful for debugging)](https://www.openpolicyagent.org/docs/latest/rest-api/#data-api)
 
 # Gotchas
 - [envoy doesn't process request bodies by default](https://docs.fastly.com/signalsciences/install-guides/envoy/#no-request-bodies-are-processed-by-default)
