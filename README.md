@@ -15,3 +15,13 @@ This example assumes an API that exposes a machine learning model and a database
 ```bash
 opa test . -v
 ```
+
+# Resources
+- [opa debugging tips](https://www.openpolicyagent.org/docs/latest/kubernetes-debugging/#check-for-post-requests-in-the-opa-container-logs)
+- [opa how base documents work](https://www.openpolicyagent.org/docs/v0.11.0/how-does-opa-work/)
+- [opa interactive debugger](https://play.openpolicyagent.org/)
+- [opa standalone envoy k8s](https://www.openpolicyagent.org/docs/latest/envoy-tutorial-standalone-envoy/)
+- [opa external data](https://www.openpolicyagent.org/docs/latest/external-data/)
+
+# Gotchas
+- [envoy doesn't process request bodies by default](https://docs.fastly.com/signalsciences/install-guides/envoy/#no-request-bodies-are-processed-by-default)

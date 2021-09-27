@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+  envoy:
+    build: ./envoy
+    ports:
+      - "8080:80"
+    volumes:
+      - ./envoy/envoy.yaml:/config/envoy.yaml
+    environment:
+      - DEBUG_LEVEL=info
+      - SERVICE_NAME=app  # should match name of upstream service
+      - SERVICE_PORT=8000
+
+  opa:
+    ports:
+      - 8181:8181
+    image: openpolicyagent/opa:0.26.0-envoy
+    volumes:
+      - ./opa/policy.rego:/config/policy.rego
+      - ./opa/data.json:/config/data.json
+    command:
+      - "run"
+      - "--log-level=debug"
+      - "--log-format=json-pretty"
+      - "--server"
+      - "--set=plugins.envoy_ext_authz_grpc.path=envoy/authz/allow"  # default value
+      - "--set=decision_logs.console=true"
+      - "/config/policy.rego"
+      - "/config/data.json"
+
+  app:
+    image: fast-api-demo:0.0.1
