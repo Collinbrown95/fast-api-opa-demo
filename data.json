@@ -1,0 +1,21 @@
+{
+  "user_roles": {
+    "alice": ["employee"],
+    "bob": ["beta_user"],
+    "eve": ["public"]
+  },
+  "role_grants": {
+    "employee": [
+      { "action": "GET", "type": "proprietary" },
+      { "action": "POST", "type": "proprietary" },
+      { "action": "GET", "type": "beta_release" },
+      { "action": "POST", "type": "beta_release" },
+      { "action": "POST", "type": "predict" }
+    ],
+    "beta_user": [
+      { "action": "GET", "type": "beta_release" },
+      { "action": "POST", "type": "predict" }
+    ],
+    "public": [{ "action": "POST", "type": "predict" }]
+  }
+}

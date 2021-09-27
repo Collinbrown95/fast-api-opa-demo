@@ -10,5 +10,5 @@ class MLModel:
         return {
             "prediction": random.choice(["Positive", "Neutral", "Negative"]),
             "confidence": random.random(),
-            "original_text": input
+            "original_text": input,
         }
