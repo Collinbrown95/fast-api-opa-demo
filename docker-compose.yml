@@ -30,3 +30,12 @@ services:
 
   app:
     image: fast-api-demo:0.0.1
+  
+  keycloak:
+    image: quay.io/keycloak/keycloak:15.0.2
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=changeme
+      - PROXY_ADDRESS_FORWARDING=true
+    ports:
+      - 8082:8080

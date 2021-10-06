@@ -26,6 +26,16 @@ opa test . -v
 - [related example of envoy/opa pattern](https://github.com/shanesoh/envoy-opa-compose)
 - [opa envoy plugin](https://github.com/open-policy-agent/opa-envoy-plugin#configuration)
 - [opa REST API reference (useful for debugging)](https://www.openpolicyagent.org/docs/latest/rest-api/#data-api)
+- [opa side of OAuth2 explanation](https://blog.styra.com/blog/integrating-identity-oauth2-and-openid-connect-in-open-policy-agent)
+- [identity management system overview](https://curity.io/resources/learn/identity-management-system/)
+- * [info: best practices for LDAP/AD and OPA](https://www.openpolicyagent.org/docs/v0.11.0/guides-identity/)
+- [JWT explained video](https://www.youtube.com/watch?v=7Q17ubqLfaM)
+- [LDAP options](https://en.wikipedia.org/wiki/List_of_LDAP_software)
+- [OAuth2.0 short overview video](https://www.youtube.com/watch?v=CPbvxxslDTU)
+- [OAuth2.0 and OpenID Connect explanation (long)](https://www.youtube.com/watch?v=996OiexHze0)
+
+## Keycloak
+- [Keycloak docs](https://www.keycloak.org/documentation.html)
 
 # Gotchas
 - [envoy doesn't process request bodies by default](https://docs.fastly.com/signalsciences/install-guides/envoy/#no-request-bodies-are-processed-by-default)
